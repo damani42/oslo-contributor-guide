@@ -1,0 +1,159 @@
+:root {
+  color-scheme: light dark;
+  --background: #faf9f6;
+  --text: #242c35;
+  --muted: #596472;
+  --accent: #a4372d;
+  --line: #dedfdc;
+  --soft: #f0f0ec;
+  --code-background: #202933;
+  --code-text: #f4f6f8;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { scroll-padding-top: 6rem; }
+body { margin: 0; background: var(--background); color: var(--text); }
+a { color: var(--accent); text-underline-offset: .2em; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible, summary:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+[hidden] { display: none !important; }
+.skip-link {
+  position: fixed; top: -8rem; left: 1rem; z-index: 10;
+  padding: .8rem 1rem; background: var(--text); color: var(--background);
+  font-family: var(--sans);
+}
+.skip-link:focus { top: .6rem; }
+.site-header {
+  position: sticky; top: 0; z-index: 5;
+  background: var(--background); border-bottom: 1px solid var(--line);
+}
+.header-inner {
+  max-width: 1240px; margin: auto; padding: 1rem 2.25rem;
+  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+  font-family: var(--sans);
+}
+.brand {
+  display: flex; align-items: center; gap: .7rem;
+  color: var(--text); font-size: 1rem; font-weight: 700; text-decoration: none;
+}
+.brand-mark {
+  display: grid; place-items: center; width: 2rem; height: 2rem;
+  border-radius: .45rem; background: var(--accent); color: #fff;
+  font-size: 1.25rem; font-weight: 800;
+}
+.source-link { font-size: .85rem; white-space: nowrap; }
+.page-shell { max-width: 1240px; margin: auto; padding: 3.25rem 2.25rem 4rem; }
+main { max-width: 780px; min-width: 0; margin: auto; }
+main:focus { outline: none; }
+.eyebrow {
+  font: 700 .72rem/1.5 var(--sans); letter-spacing: .1em;
+  text-transform: uppercase; color: var(--muted);
+}
+.article-label { margin: 0 0 1.1rem; color: var(--accent); }
+.guide { font: 1.125rem/1.8 Georgia, "Times New Roman", serif; }
+.guide h1, .guide h2, .guide h3 { font-family: var(--sans); line-height: 1.22; }
+.guide h1 { margin: 0 0 1.3rem; font-size: clamp(2.2rem, 4vw, 3.1rem); letter-spacing: -.045em; }
+.guide h2 {
+  margin: 3.3rem 0 1.1rem; padding-top: 1.6rem;
+  border-top: 1px solid var(--line); font-size: 1.75rem; letter-spacing: -.025em;
+}
+.guide h3 { margin: 2rem 0 .8rem; font-size: 1.2rem; letter-spacing: -.01em; }
+.guide p, .guide ul, .guide ol { margin: 1rem 0; }
+.guide li { margin: .4rem 0; padding-left: .15rem; }
+.guide ul, .guide ol { padding-left: 1.55rem; }
+.guide strong { font-weight: 700; }
+.guide code, .guide pre { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+.guide :not(pre) > code {
+  padding: .12em .3em; border-radius: .2rem;
+  background: var(--soft); font-size: .82em; overflow-wrap: anywhere;
+}
+.guide pre {
+  max-width: 100%; overflow-x: auto; margin: 1.35rem 0;
+  padding: 1.15rem 1.3rem; border-radius: .5rem;
+  background: var(--code-background); color: var(--code-text);
+  font-size: .82rem; line-height: 1.7; tab-size: 4;
+}
+.guide pre code { padding: 0; background: transparent; color: inherit; }
+.guide .highlight { background: transparent; }
+.guide .highlight pre { margin: 1.35rem 0; }
+.guide table {
+  display: block; max-width: 100%; overflow-x: auto;
+  margin: 1.6rem 0; border-collapse: collapse;
+  font: .9rem/1.6 var(--sans);
+}
+.guide th, .guide td {
+  padding: .8rem .95rem; text-align: left; vertical-align: top;
+  border-bottom: 1px solid var(--line);
+}
+.guide th { background: var(--soft); font-weight: 650; }
+.guide td:first-child, .guide th:first-child { min-width: 11rem; }
+.guide td:last-child { min-width: 16rem; }
+.guide blockquote {
+  margin: 1.5rem 0; padding: .1rem 1.3rem;
+  border-left: 3px solid var(--accent); color: var(--muted);
+}
+.article-footer {
+  margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+  color: var(--muted); font: .85rem/1.8 var(--sans);
+}
+.article-footer p { margin: .4rem 0; }
+.sidebar { font-family: var(--sans); }
+.sidebar-inner { position: sticky; top: 6rem; max-height: calc(100vh - 8rem); overflow-y: auto; }
+.sidebar .eyebrow { margin: 0 0 1rem; }
+#guide-navigation { margin: 0; padding: 0; list-style: none; }
+#guide-navigation li { margin-bottom: .35rem; }
+#guide-navigation a {
+  display: block; padding: .35rem .65rem; border-left: 2px solid var(--line);
+  color: var(--muted); text-decoration: none; font-size: .84rem; line-height: 1.5;
+}
+#guide-navigation a:hover, #guide-navigation a[aria-current="location"] {
+  color: var(--accent); border-color: var(--accent); background: var(--soft);
+}
+.sidebar-note { margin: 1.5rem .65rem 0; color: var(--muted); font-size: .75rem; line-height: 1.7; }
+
+@media (min-width: 1050px) {
+  .enhanced .page-shell { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 3.5rem; }
+  .enhanced .guide #contents, .enhanced .guide #contents + ul { display: none; }
+}
+@media (max-width: 1049px) {
+  .sidebar { display: none; }
+}
+@media (max-width: 600px) {
+  .header-inner { padding: .8rem 1.1rem; }
+  .brand { font-size: .88rem; gap: .5rem; }
+  .brand-mark { width: 1.7rem; height: 1.7rem; font-size: 1.05rem; }
+  .source-link { font-size: .75rem; }
+  .source-label { display: none; }
+  .page-shell { padding: 2rem 1.2rem 3rem; }
+  .guide { font-size: 1.05rem; line-height: 1.8; }
+  .guide h1 { font-size: 2.25rem; }
+  .guide h2 { font-size: 1.5rem; margin-top: 2.5rem; }
+  .guide pre { padding: 1rem; font-size: .76rem; }
+  .guide table { font-size: .82rem; }
+  .guide th, .guide td { padding: .65rem .7rem; }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #172027; --text: #e4e8ec; --muted: #abb6c2;
+    --accent: #f09886; --line: #35414c; --soft: #232e38;
+    --code-background: #10171e; --code-text: #e4e8ec;
+  }
+  .brand-mark { color: #172027; }
+}
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+@media print {
+  .site-header, .sidebar, .article-label, .article-footer, .skip-link { display: none !important; }
+  .page-shell, .enhanced .page-shell { display: block; padding: 0; }
+  main { max-width: none; }
+  body { background: #fff; color: #000; }
+  .guide { font-size: 11pt; }
+  .guide pre { white-space: pre-wrap; overflow-wrap: anywhere; color: #000; background: #f3f3f3; }
+  .guide table { overflow: visible; display: table; font-size: 9pt; }
+  .guide th, .guide td { min-width: 0 !important; }
+  .guide h2, .guide h3 { break-after: avoid; }
+}

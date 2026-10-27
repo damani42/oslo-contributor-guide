@@ -1,0 +1,15 @@
+title: Oslo Contributor Guide
+description: A practical English-language guide for new contributors to OpenStack Oslo.
+url: https://damani42.github.io
+baseurl: /oslo-contributor-guide
+repository: damani42/oslo-contributor-guide
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  hard_wrap: false
+exclude:
+  - README.md
+  - CONTRIBUTING.md
+  - LICENSE
+  - NOTICE

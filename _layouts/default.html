@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <meta name="description" content="{{ site.description | escape }}">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="{{ page.title | escape }}">
+    <meta property="og:description" content="{{ site.description | escape }}">
+    <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}/">
+    <title>{{ page.title | escape }} · {{ site.title | escape }}</title>
+    <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}/">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/site.css">
+    <script src="{{ site.baseurl }}/assets/js/navigation.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to the guide</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="{{ site.baseurl }}/">
+          <span class="brand-mark" aria-hidden="true">O</span>
+          <span>{{ site.title }}</span>
+        </a>
+        <a class="source-link" href="https://github.com/{{ site.repository }}"><span class="source-label">View on </span>GitHub <span aria-hidden="true">↗</span></a>
+      </div>
+    </header>
+    <div class="page-shell">
+      <aside class="sidebar" aria-label="Guide navigation" hidden>
+        <div class="sidebar-inner">
+          <p class="eyebrow">In this guide</p>
+          <nav aria-label="Table of contents">
+            <ol id="guide-navigation"></ol>
+          </nav>
+          <p class="sidebar-note">An independent community guide for your first Oslo contribution.</p>
+        </div>
+      </aside>
+      <main id="main" tabindex="-1">
+        <p class="eyebrow article-label">OpenStack · Shared Python libraries</p>
+        <article class="guide" id="guide">{{ content }}</article>
+        <footer class="article-footer">
+          <p>Maintained by Daniel Bengtsson and contributors.</p>
+          <p><a href="https://github.com/{{ site.repository }}/blob/main/LICENSE">CC BY 4.0</a>
+            <span aria-hidden="true"> · </span>
+            <a href="https://github.com/{{ site.repository }}/edit/main/guide.md">Suggest an improvement</a>
+            <span aria-hidden="true"> · </span>
+            <a href="#main">Back to top ↑</a></p>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>

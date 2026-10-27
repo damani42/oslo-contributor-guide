@@ -2,7 +2,7 @@
 
 A practical English-language guide for new contributors to OpenStack Oslo.
 
-**[Read the complete guide](guide.md)**
+**[Read the web guide](https://damani42.github.io/oslo-contributor-guide/)** · [Read the Markdown source](guide.md)
 
 This independent community resource brings the contribution journey into one place: understanding Oslo, choosing a library, preparing a development environment, finding work, submitting a Gerrit change, and responding to review.
 
@@ -49,7 +49,15 @@ guide.md           Complete contributor guide
 CONTRIBUTING.md    How to improve and maintain the guide
 LICENSE            Creative Commons Attribution 4.0 International
 NOTICE             Attribution and source acknowledgments
+index.md           Web entry point, including guide.md directly
+_config.yml        GitHub Pages and Jekyll configuration
+_layouts/          Reading layout
+assets/            Responsive styles and section navigation
 ```
+
+## Web publication
+
+GitHub Pages publishes the site from the root of `main`. Jekyll includes `guide.md` directly in the web entry point, so editing the guide updates both the repository version and the website. The layout provides responsive tables and code blocks, a section navigation on larger screens, system dark-mode support, and a print stylesheet.
 
 ## Contributing
 

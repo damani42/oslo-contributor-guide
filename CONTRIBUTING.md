@@ -32,6 +32,7 @@ Check that relative links and table-of-contents links resolve, code blocks are r
 ## Keep the guide maintainable
 
 - Keep `guide.md` as the complete learning path; use `README.md` for the project overview and reading routes.
+- The website includes `guide.md` from `index.md`; edit the guide directly when changing its content. Presentation lives in `_layouts/default.html` and `assets/`. GitHub Pages rebuilds the site after changes are pushed to `main`.
 - Keep the project inventory aligned with the [official Oslo team list](https://governance.openstack.org/tc/reference/projects/oslo.html).
 - Link to common contribution procedures and Oslo policies when they supply the authoritative detail.
 - Update review dates after a technical review. Explain the scope of the review when only part of the guide was checked.
