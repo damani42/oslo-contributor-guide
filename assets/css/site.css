@@ -79,7 +79,7 @@ main:focus { outline: none; }
   font-size: .82rem; line-height: 1.7; tab-size: 4;
 }
 .guide pre code { padding: 0; background: transparent; color: inherit; }
-.guide .highlight { background: transparent; }
+.guide div.highlight { background: transparent; }
 .guide .highlight pre { margin: 1.35rem 0; }
 .guide table {
   display: block; max-width: 100%; overflow-x: auto;
