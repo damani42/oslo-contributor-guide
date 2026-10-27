@@ -1,0 +1,22 @@
+Oslo Contributor Guide
+
+Maintained by Daniel Bengtsson.
+Copyright 2026 Daniel Bengtsson and contributors, where applicable.
+
+The documentation in this repository is provided under Creative Commons
+Attribution 4.0 International (CC BY 4.0). The complete license text is in
+LICENSE, and the canonical license URL is:
+https://creativecommons.org/licenses/by/4.0/
+
+Suggested attribution:
+"Oslo Contributor Guide, Daniel Bengtsson and contributors, CC BY 4.0."
+Include a link to the source when sharing a published version, and identify
+changes when adapting the material.
+
+The guide draws on primary sources maintained by OpenStack, OpenDev, and
+the individual project contributors. Links to these sources appear beside
+the relevant material and in the guide's reference section. External
+materials retain their respective attribution and license notices.
+
+Material AI assistance in preparing the initial guide is recorded in the
+initial commit metadata as "Assisted-By: OpenAI Codex".
